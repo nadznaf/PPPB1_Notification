@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_margin="32dp">
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Apakah wonwoo ganteng?"
+        android:gravity="center"
+        android:fontFamily="@font/poppins_bold"
+        />
+
+    <LinearLayout
+        android:id="@+id/llGanteng"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="16dp">
+        <TextView
+            android:id="@+id/txtCounterGanteng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Counter Ganteng:"
+            android:fontFamily="@font/poppins_regular"
+            android:drawableStart="@drawable/baseline_thumb_up"
+            android:drawablePadding="8dp"/>
+        <TextView
+            android:id="@+id/counterGanteng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="counter"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/poppins_bold"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llJelek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="8dp">
+        <TextView
+            android:id="@+id/txtCounterJelek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Counter Jelek:"
+            android:fontFamily="@font/poppins_regular"
+            android:drawableStart="@drawable/baseline_thumb_down"
+            android:drawablePadding="8dp"/>
+        <TextView
+            android:id="@+id/counterJelek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="counter"
+            android:layout_marginStart="8dp"
+            android:fontFamily="@font/poppins_bold"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnNotif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Kirim Notifikasi"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:backgroundTint="@color/black"
+        android:fontFamily="@font/poppins_bold"
+        android:layout_marginTop="32dp"
+        android:elevation="8dp"
+        />
+
+</LinearLayout>
